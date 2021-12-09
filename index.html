@@ -26,32 +26,30 @@
             </ul>
          </nav>
     </header>
-    <!--Changed this <div> to the semantic <section> and gave it a more descriptive class name...might change it back to 
-        <div> because it's not really a section.-->
-
-  <section class="main-picture"></section>
-        
-
+    <!--Changed this <div> to the semantic <figure> and gave it a more descriptive class name...I did have it as
+        a <section> but it's not really a section.-->
+  <figure></figure>
+    
     <!--Changed the <div> below to the semantic <main> to reflect the main content of the page.-->
     <main>
         <!--Changed the three <div>s below to the semantic <article>, which is indepedently distributable or reuseable.-->
-            <!--Added <alt> to each of the images-->
-             <article>
+            <!--Added <alt> to each of the images-- added an id to all articles to make nav links functional-->
+             <article id="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" alt="Notebook with SEO examples" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </article>
-        <!--Deleted unused ids, replaced <div class> with the semantic <article>-->
-           <article>
+        <!--Replaced <div class> with the semantic <article>-->
+           <article id="online-reputation-management">
             <img src="./assets/images/online-reputation-management.jpg" alt="Laptop with bar graph labeled 'Reputation'" class="float-right" />
-            <h2>Online Reputation Management</h2>
+            <h2 >Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
-           <article>
+           <article id="social-media-marketing">
             <img src="./assets/images/social-media-marketing.jpg" alt="Group meeting discussing terms: 'tweet', 'media', 'share', like'" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -87,12 +85,13 @@
     </section>
 
 
-    <!--Changed <div class="footer"> to the semantic <footer>-->
+    <!--Changed <div class="footer"> to the semantic <footer>; changed <h2> to the more sequential <h4>-->
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
+        <h4>Made with ❤️️ by Horiseon</h4>
+        <!-- Added the semantic <small> tag in place of the <p> (minor change) -->
+        <small>
             &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
+    </small>
     </footer>
 </body>
 
